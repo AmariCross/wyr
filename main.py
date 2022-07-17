@@ -1,5 +1,3 @@
-from typing import Union
-
 from fastapi import FastAPI
 from bs4 import BeautifulSoup
 import aiohttp
