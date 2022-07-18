@@ -5,8 +5,7 @@ import aiohttp
 
 async def get_site_content(link):
     hdr = {
-        'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) '
-                      'Chrome/92.0.4515.107 Mobile Safari/537.36'}
+        'user-agent': 'COUGH COUGH'}
     async with aiohttp.ClientSession() as session:
         async with session.get(link, headers=hdr) as resp:
             text = await resp.read()
